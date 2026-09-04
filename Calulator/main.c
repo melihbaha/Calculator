@@ -25,13 +25,9 @@ typedef struct {
 	TokenValue value; // Ortak bellek alanı
 } Token;
 
-typedef struct {
-	TokenType type;
-
-};
-
 int main() {
 	char temp[50];
+	Token token[1];
 	get_buffer(temp, sizeof(temp));
 	print_string_by_chars(temp);
 	return 0;
